@@ -1,0 +1,100 @@
+/* style.css */
+
+:root {
+  --bg: #f5f5f5;
+  --card: #ffffff;
+  --text: #333;
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --border: #ddd;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.toolbox {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1 1 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.upload-area input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+#fileList {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+.preview canvas {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  border: 1px solid var(--border);
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #888;
+  background: #f0f0f0;
+  font-size: 0.9rem;
+}
