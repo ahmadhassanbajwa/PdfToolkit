@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Toolkit - Offline Editor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📄 PDF Toolkit</h1>
+    <p>Merge, Compress, Rotate & Watermark PDFs Offline</p>
+  </header>
+
+  <main class="toolbox">
+    <section class="upload-area">
+      <h2>🗂️ Upload PDF Files</h2>
+      <input type="file" id="pdfInput" multiple accept="application/pdf"/>
+      <div id="fileList"></div>
+    </section>
+
+    <section class="actions">
+      <h2>🛠️ Tools</h2>
+      <div class="btn-group">
+        <button onclick="mergePDFs()">Merge</button>
+        <button onclick="compressPDF()">Compress</button>
+        <button onclick="rotatePDF()">Rotate Pages</button>
+        <button onclick="addWatermark()">Add Watermark</button>
+        <button onclick="downloadResult()">Download</button>
+      </div>
+    </section>
+
+    <section class="preview">
+      <h2>📄 Preview</h2>
+      <canvas id="pdfPreview"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ using pdf-lib.js and vanilla JS</p>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="libs/pdf-lib.min.js"></script>
+  <script src="libs/pdf.js"></script>
+
+  <!-- App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
